@@ -8,11 +8,46 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script type="text/javascript">
-      window.ymConfig = { bot: 'x1642609869150', host: 'https://cloud.yellowmessenger.com' };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
-    </script>
+<script src="https://chat.orsolaas.onereach.ai/lib/richWebChat.umd.min.js"></script>
+<link rel="stylesheet" href="https://chat.orsolaas.onereach.ai/lib/richWebChat.css"/>
    </head>
 <body>
+  
+  
+  <div id="rwc"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var RWC = richWebChat.default
+    var app = new RWC({
+      container: '#rwc', // DOM element selector where chat will be inserted
+      chatUrl: 'https://chat.orsolaas.onereach.ai/gbnpAxX6SNyaXllINzjEpQ/0x758qp', // url of your chat. required
+      autoExpandDelay: 15000,
+      position: 'bottom-right',
+      inviteMessage: "",
+      inviteButton: "",
+      inviteImage: undefined,
+      showCloseIcon: false,
+      inviteTimeout: 5000,
+      allowChangeChatWindowSize: false,
+      allowDrag: true,
+      widgetColor: '#409fec',
+      allowStartNewConversation: true,
+      thumbLogo: undefined,
+      animation: 'pulse', // 'pulse', 'ring', 'zoom',
+      appearance: {
+        blurredBackground: false
+      },
+      pageData: {
+        fname: 'foo'
+      }
+    })
+  });
+</script>
+          
+  
+  
+  
+  
   <nav>
     <div class="navbar">
       <i class='bx bx-menu'></i>
